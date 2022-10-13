@@ -1,0 +1,163 @@
+html {
+    background-color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    color: seashell;
+    opacity: 0.8;
+    text-align:center;
+}
+
+a{
+    color: seashell;
+}
+
+a:active{
+    color: darkgreen;
+}
+
+
+.banner{
+    border-bottom: 1px solid seashell;
+    width: 98vw;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 69px;
+    margin: 0 10px;
+    z-index: 1;
+    background-color: black;
+}
+
+.logo-img{
+    height: 50px;
+    margin: 10px;
+}
+
+nav{
+    margin-right: 10px;
+}
+
+ul{
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+    list-style-type: none;
+    text-decoration: underline;
+ }
+
+
+.mission{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1200px;
+    height: 700px;
+    margin: 0 auto;
+    background-image: url("images/img-mission-background.jpg");
+    align-items: center;
+    top: 80px;
+}
+
+.mission-banner{
+    background-color: black;
+    width: 100%;
+}
+
+
+
+.tea-month{
+    position: relative;
+    top: 50px;
+    max-width: 1000px;
+    margin: 100px auto;
+}
+
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+     
+}
+
+.tea-card{
+    width: 330px;
+
+}
+
+.tea-card > img{
+    width: 300px;
+    height: 200px;
+    margin: 0 15px;
+}
+
+.tea-card > h4{
+    margin: 10px 0;
+}
+
+.locations > h2{
+    margin: 50px 0 15px 0;
+}
+
+.locations{
+    padding-top:50px;
+    background-image: url("images/img-locations-background.jpg");
+    background-size: cover;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+ .location-cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px; 
+    height: 400px;
+    display: flex;
+    
+    margin-top: 15px; 
+ }
+
+
+.location-card{
+    height: 300px;
+    width: 300px;
+    background-color: black;
+    margin: 0 20px;
+}
+
+@media all and (max-width: 1050px) {
+    .location-card{
+        width: 200px;
+        height: 200px;
+    }
+    .locations > h3, h4{
+        font-size: 0.7rem;
+    }
+}
+
+@media all and (max-width: 500px) {
+    .location-card{
+        width: 150px;
+        height: 180px;
+    }
+    .locations > h3, h4{
+        font-size: 0.6rem;
+        margin: 5px;
+    }
+}
+
+.contact{
+    height: 200px;
+}
+
+
+
+.legal-mentions{
+    text-align: left;
+    margin: 40px 20px;
+}
